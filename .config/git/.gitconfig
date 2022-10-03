@@ -1,0 +1,29 @@
+[user]
+	name = "Adem Usta"
+	email = mr.usta.adem@gmail.com
+[core]
+	editor = vim
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    graph = log --all --decorate --graph --oneline
+    br = branch
+    df = diff --color-words='[^[:space:]]'
+    sh = show --color-words='[^[]]'
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    new = green bold
+[log]
+    date = relative
+[format]
+    pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+[color]
+	ui = true
+[push]
+	default = current
