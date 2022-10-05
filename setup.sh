@@ -41,8 +41,10 @@ sudo pacman -S bluez-utils
 sudo pacman -S blueman
 sudo systemctl enable bluetooth.service 
 
+# Install and configure audio
 sudo pacman -S pulseaudio
 sudo pacman -S pulseaudio-alsa
 sudo pacman -S pavucontrol
 yay -S indicator-sound-switcher
+# Follow https://forum.manjaro.org/t/nvidia-drivers-seem-to-not-be-working/73598/15 to enable HDMI output via NVIDIA
 
