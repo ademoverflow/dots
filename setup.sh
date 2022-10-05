@@ -8,6 +8,7 @@
 sudo pacman -Sy
 
 sudo pacman -S unzip
+sudo pacman -S yay
 
 # Load nvidia-settings
 sudo mv nvidia-settings/xorg.conf /etc/X11/xorg.conf.d/90-mhwd.conf
@@ -30,4 +31,18 @@ sudo pacman -S alacritty
 
 # Install polybar
 sudo pacman -S polybar
+
+# Install ulauncher
+git clone https://aur.archlinux.org/ulauncher.git && cd ulauncher && makepkg -is
+
+# Install bluetooth
+sudo pacman -S bluez
+sudo pacman -S bluez-utils
+sudo pacman -S blueman
+sudo systemctl enable bluetooth.service 
+
+sudo pacman -S pulseaudio
+sudo pacman -S pulseaudio-alsa
+sudo pacman -S pavucontrol
+yay -S indicator-sound-switcher
 
