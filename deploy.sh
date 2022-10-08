@@ -21,3 +21,8 @@ ln -s $PWD/.config/i3/config ~/.i3/config
 # picom
 rm -f ~/.config/picom.conf
 ln -s $PWD/.config/picom/picom.conf ~/.config/picom.conf
+
+# wallpapers
+rm -rf ~/wallpapers
+ln -s $PWD/wallpapers/ ~/
+

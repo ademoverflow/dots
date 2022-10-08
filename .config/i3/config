@@ -151,7 +151,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec_always --no-startup-id feh --no-fehbg --bg-scale ~/images/1.png &
+exec_always --no-startup-id feh --no-fehbg --bg-scale ~/wallpapers/5120x1440.jpg
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ulauncher --no-window-shadow
