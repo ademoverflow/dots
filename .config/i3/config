@@ -165,4 +165,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh --material
 gaps inner 12
 gaps outer -2
 
+for_window [class=".*"] border pixel 0
 smart_borders on
