@@ -8,7 +8,6 @@ bindsym $mod+Return exec alacritty
 default_border pixel 1
 default_floating_border pixel 1
 
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -38,9 +37,6 @@ bindsym $mod+f fullscreen toggle
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad

@@ -26,3 +26,6 @@ ln -s $PWD/.config/picom/picom.conf ~/.config/picom.conf
 rm -rf ~/wallpapers
 ln -s $PWD/wallpapers/ ~/
 
+# Ulauncher
+rm -rf ~/.config/ulauncher
+ln -s $PWD/.config/ulauncher ~/.config/
