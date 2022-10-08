@@ -9,6 +9,7 @@ sudo pacman -Sy
 
 sudo pacman -S unzip
 sudo pacman -S yay
+sudo pacman -S feh
 
 # Load nvidia-settings
 sudo mv nvidia-settings/xorg.conf /etc/X11/xorg.conf.d/90-mhwd.conf
