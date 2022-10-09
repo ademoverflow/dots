@@ -65,3 +65,5 @@ pamac install flac lib32-flac
 
 # Install Nautilus
 sudo pacman -S nautilus
+
+# Change Xresources to dpi: 120
