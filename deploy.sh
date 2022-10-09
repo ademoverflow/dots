@@ -33,3 +33,7 @@ ln -s $PWD/.config/ulauncher ~/.config/
 # Zsh
 rm -f ~/.zshrc
 ln -s $PWD/.config/zsh/.zshrc ~/.zshrc
+
+# Polybar
+rm -rf ~/.config/polybar
+ln -s $PWD/.config/polybar ~/.config/
