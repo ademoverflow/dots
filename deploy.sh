@@ -29,3 +29,7 @@ ln -s $PWD/wallpapers/ ~/
 # Ulauncher
 rm -rf ~/.config/ulauncher
 ln -s $PWD/.config/ulauncher ~/.config/
+
+# Zsh
+rm -f ~/.zshrc
+ln -s $PWD/.config/zsh/.zshrc ~/.zshrc
