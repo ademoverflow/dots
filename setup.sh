@@ -67,3 +67,7 @@ pamac install flac lib32-flac
 sudo pacman -S nautilus
 
 # Change Xresources to dpi: 120
+
+# Install NoiseTorch
+wget https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
+tar -C $HOME -h -xzf NoiseTorch_x64_v0.12.2.tgz
