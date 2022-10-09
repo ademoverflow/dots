@@ -62,3 +62,6 @@ sudo pacman -S ttf-font-awesome
 sudo pacman -S code
 pamac install flac lib32-flac
 # Reboot after
+
+# Install Nautilus
+sudo pacman -S nautilus
