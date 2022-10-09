@@ -54,3 +54,11 @@ yay -S indicator-sound-switcher
 mkdir -p ~/apps
 git clone git@github.com:stuarthayhurst/argon-grub-theme.git apps/argon-grub-theme
 sudo ./apps/argon-grub-theme/install.sh -i --background Grey --fontsize 16    
+
+# Install font awesome
+sudo pacman -S ttf-font-awesome 
+
+# Install code
+sudo pacman -S code
+pamac install flac lib32-flac
+# Reboot after
