@@ -49,3 +49,8 @@ sudo pacman -S pavucontrol
 yay -S indicator-sound-switcher
 # Follow https://forum.manjaro.org/t/nvidia-drivers-seem-to-not-be-working/73598/15 to enable HDMI output via NVIDIA
 
+# Install grub theme
+# Use this repo: https://github.com/stuarthayhurst/argon-grub-theme
+mkdir -p ~/apps
+git clone git@github.com:stuarthayhurst/argon-grub-theme.git apps/argon-grub-theme
+sudo ./apps/argon-grub-theme/install.sh -i --background Grey --fontsize 16    
