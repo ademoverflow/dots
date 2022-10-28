@@ -6,6 +6,10 @@
 
 set -euxo pipefail
 
+# Screens
+rm -rf ~/.config/monitors
+ln -s $PWD/.config/monitors ~/.config/
+
 # Gitconfig
 rm -f ~/.gitconfig
 ln -s $PWD/.config/git/.gitconfig ~/.gitconfig
