@@ -154,7 +154,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ulauncher --no-window-shadow
-exec_always --no-startup-id feh --bg-scale ~/wallpapers/5120x1440.jpg
+exec_always --no-startup-id feh --bg-scale ~/wallpapers/5120x1440.jpg ~/wallpapers/1920x1080.png
 
 #############################
 ### settings for i3-gaps: ###
