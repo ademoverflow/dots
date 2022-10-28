@@ -149,7 +149,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec_always --no-startup-id ~/.config/monitors/launch.sh
+exec_always --no-startup-id sleep 1; ~/.config/monitors/launch.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
