@@ -28,6 +28,17 @@ workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
+# use workspaces on different monitors
+workspace 1 output DP-2
+workspace 2 output DP-2
+workspace 3 output DP-2
+workspace 4 output DP-2
+workspace 5 output DP-2
+workspace 6 output DP-2 
+workspace 7 output DP-2
+workspace 8 output DP-2
+workspace 9 output DVI-I-1-1
+
 # split orientation
 bindsym $mod+h split h
 bindsym $mod+v split v
