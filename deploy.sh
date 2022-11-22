@@ -6,6 +6,10 @@
 
 set -euxo pipefail
 
+# Screens
+rm -rf ~/.config/monitors
+ln -s $PWD/.config/monitors ~/.config/
+
 # Gitconfig
 rm -f ~/.gitconfig
 ln -s $PWD/.config/git/.gitconfig ~/.gitconfig
@@ -37,3 +41,7 @@ ln -s $PWD/.config/zsh/.zshrc ~/.zshrc
 # Polybar
 rm -rf ~/.config/polybar
 ln -s $PWD/.config/polybar ~/.config/
+
+# Xorg (for evdi display only)
+sudo rm /etc/X11/xorg.conf.d/20-evdi.conf
+sudo ln -s $PWD/evdi-settings/20-evdi.conf /etc/X11/xorg.conf.d/20-evdi.conf
