@@ -16,10 +16,12 @@ ln -s $PWD/.config/git/.gitconfig ~/.gitconfig
 
 # Alacritty
 rm -f ~/.config/alacritty/alacritty.yml
+mkdir -p ~/.config/alacritty/
 ln -s $PWD/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # i3
 rm -f ~/.i3/config
+mkdir -p ~/.i3
 ln -s $PWD/.config/i3/config ~/.i3/config
 
 # picom
@@ -45,7 +47,3 @@ ln -s $PWD/.config/zsh/.zshrc ~/.zshrc
 # Polybar
 rm -rf ~/.config/polybar
 ln -s $PWD/.config/polybar ~/.config/
-
-# Xorg (for evdi display only)
-sudo rm /etc/X11/xorg.conf.d/20-evdi.conf
-sudo ln -s $PWD/evdi-settings/20-evdi.conf /etc/X11/xorg.conf.d/20-evdi.conf
