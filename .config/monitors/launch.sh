@@ -1,11 +1,3 @@
 #!/bin/bash
 
-device=$(find /sys/devices -name "edid" | cut -d/ -f 8)
-device=$(echo "${device#*-}")-1
-
-xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
-xrandr --addmode ${device} 1920x1080_60.00
-
-xrandr \
-    --output DP-2 --primary --mode 5120x1440 --pos 0x0 --rotate normal \
-    --output ${device} --mode 1920x1080_60.00 --pos 1600x1440 --rotate normal
+xrandr --output eDP-1 --off --output DVI-I-5-4 --off --output DVI-I-4-3 --off --output DVI-I-3-2 --off --output DVI-I-2-1 --primary --mode 1920x1080 --pos 1930x0 --rotate normal --output HDMI-1-0 --mode 1920x1080 --pos 0x0 --rotate normal
