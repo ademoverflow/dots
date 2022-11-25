@@ -145,8 +145,8 @@ mode "resize" {
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec --no-startup-id streamdeck &
 exec_always --no-startup-id picom -b
+exec_always --no-startup-id indicator-sound-switcher &
 exec_always --no-startup-id sleep 1; ~/.config/monitors/launch.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ulauncher --no-window-shadow
