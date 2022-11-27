@@ -4,7 +4,13 @@
 killall -q polybar
 
 if type "xrandr"; then
-  for monitor in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  # Primary monitor first
+  PRIMARY=$(xrandr --query | grep " connected" | grep "primary" | cut -d" " -f1)
+  MONITOR=$PRIMARY polybar --reload top &
+
+  # Others
+  OTHERS=$(xrandr --query | grep " connected" | grep -v "primary" | cut -d" " -f1)
+  for monitor in ${OTHERS}; do
     MONITOR=$monitor polybar --reload top &
   done
 else
