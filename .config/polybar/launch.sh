@@ -4,4 +4,4 @@
 killall -q polybar
 
 # Launch Polybar, using default config location ~/.config/polybar/config.ini
-polybar top
+polybar -r top
