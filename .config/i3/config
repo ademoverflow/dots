@@ -163,8 +163,8 @@ exec_always --no-startup-id feh --bg-scale ~/wallpapers/5120x1440.jpg ~/wallpape
 #############################
 
 # Set inner/outer gaps
-gaps inner 12
-gaps outer -2
+gaps inner 10
+gaps top 40
 
 for_window [class=".*"] border pixel 0
 smart_borders on
