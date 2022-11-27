@@ -143,7 +143,6 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id picom -b
 exec --no-startup-id noisetorch -i alsa_input.usb-Trust_USB_microphone_Trust_USB_microphone_20191101-00.mono-fallback
 exec --no-startup-id indicator-sound-switcher &
 exec --no-startup-id manjaro-hello
@@ -151,6 +150,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec_always --no-startup-id picom -b
 exec_always --no-startup-id sleep 1; ~/.config/monitors/launch.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ff-theme-util
