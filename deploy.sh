@@ -38,6 +38,10 @@ ln -s $PWD/wallpapers/ ~/
 rm -rf ~/.config/ulauncher
 ln -s $PWD/.config/ulauncher ~/.config/
 
+# Awesome
+rm -rf ~/.config/awesome
+ln -s $PWD/.config/awesome ~/.config/
+
 # Zsh
 rm -f ~/.zshrc
 ln -s $PWD/.config/zsh/.zshrc ~/.zshrc
