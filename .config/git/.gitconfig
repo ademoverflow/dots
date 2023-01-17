@@ -2,7 +2,7 @@
 	name = "Adem Usta"
 	email = adem_ext@anotherbrain.ai
 [core]
-	editor = vim
+	editor = code --wait
 [alias]
     st = status
     ci = commit
